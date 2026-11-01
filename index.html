@@ -3,166 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Portfolio</title>
+    <title>Jane John</title>
+    <meta
+      name="description"
+      content="Jane John, Software Engineering student learning backend development and AI."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml, <svg xmlns=%22https://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="navbar">
-      <div class="nav-container">
-        <a href="#" class="logo">Jane.<span>dev</span></a>
-        <nav class="nav-links" id="navLinks">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+    <header>
+      <a href="#home" class="logo">Jane John</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <span class="badge">Aspiring Back-end & AI Engineer.</span>
-        <h1>Hi, I'm <span class="highlight">Jane John</span></h1>
-        <p>
-          Second-year software engineering student building my foundation in
-          python, backend logic, and artificial intelligence. Leaening every day
-          and exploring how inteligent systems work.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary-btn">View My Learning</a>
-          <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <p class="tag">Software Engineering Student</p>
+          <h1>I like to see what happens underneath.</h1>
+          <p class="intro">
+            From logic gates to backend code to AI. I am learning each layer and
+            building as I go.
+          </p>
+          <a href="#projects" class="btn">See my work</a>
         </div>
-      </div>
-    </section>
+        <div class="card-gate">
+          <h3>Try a logic gate</h3>
+          <select id="gate-type">
+            <option value="AND">AND</option>
+            <option value="OR">OR</option>
+            <option value="XOR">XOR</option>
+          </select>
+          <div class="inputs">
+            <button id="in-a">A = 0</button>
+            <button id="in-b">B = 0</button>
+          </div>
+          <div id="gate-out" class="output">Output = 0</div>
+        </div>
+      </section>
 
-    <section id="about" class="about-section">
-      <div class="container">
-        <h2>About Me</h2>
+      <section id="about">
+        <h2>About</h2>
         <div class="about-grid">
-          <div class="about-text">
+          <div>
             <p>
-              I'm a second-year Software Engineering student at
-              <strong>Miva Open University</strong>. My core focus is
-              understanding what happens beneath the surface-from university
-              calculus to digital logic design to backend programming and AI
-              workflows.
+              I am a second-year Software Engineering student at Miva Open
+              University. I want to understand what happens beneath the surface,
+              from digital logic to backend programming to AI.
             </p>
             <p>
-              I love breaking down complex technical concepts step by step,
-              experimentimg with python, and building a solid foundation in
-              software architecture.
+              I learn by breaking things down step by step and building small
+              things that work.
             </p>
           </div>
-          <div class="about-highlights">
-            <div class="highlight-card">
-              <h3>Degree</h3>
-              <p>B.Sc. Software Engineering (Sophomore)</p>
-            </div>
-            <div class="highlight-card">
-              <h3>Focus Areas</h3>
-              <p>Python, Backend Logic, AI & Digital Systems</p>
-            </div>
+          <div class="card">
+            <h3>Focus</h3>
+            <p>Backend development, then AI engineering</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects" class="projects-section">
-      <div class="container">
-        <h2>Projects & Work in Progress</h2>
-        <p class="section-subtitle">
-          Real coursework and hands-on exploration I am building and developing:
-        </p>
-        <div class="projects-grid">
-          <div class="projects-card">
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="card project">
             <h3>Student Course Management System</h3>
             <p>
-              A backend mini-system built with <strong>Java</strong>to handle
-              student registration, data management, and core application logic
-              as part of my software engineering coursework.
+              In progress. A backend mini system in Java that handles student
+              registration and course data using object-oriented programming.
             </p>
-            <div class="card-tags">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">Object-Oriented Programming</span>
+            <div class="tags">
+              <span>Java</span>
+              <span>OOP</span>
+              <span>In progress</span>
             </div>
-          </div>
-          <div class="project-card">
+            <!-- <a href="#" class="link">View code</a> -->
+          </article>
+          <article class="card project">
             <h3>Digital Logic Design</h3>
             <p>
-              Building and testing circuit schematics using splitters, counters,
-              decoders, and logic gates on <strong>CircuitVerse</strong> as part
-              of my coursework.
+              Circuits built and tested on CircuitVerse using logic gates,
+              decoders, counters and splitters.
             </p>
-            <div class="card-tags">
-              <span class="tech-tag">CircuitVerse</span>
-              <span class="tech-tag">Logic Gates</span>
+            <div class="tags">
+              <span>CircuitVerse</span>
+              <span>Logic Gates</span>
+            </div>
+            <a href="#" class="link">View circuits</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="card">
+            <h3>Comfortable</h3>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>VS Code</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Hardware and Logic</h3>
+            <div class="tags">
+              <span>CircuitVerse</span>
+              <span>Logic Gates</span>
+              <span>Decoders</span>
+              <span>Counters</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Learning</h3>
+            <div class="tags">
+              <span>Java</span>
+              <span>OOP</span>
+              <span>Python</span>
+              <span>Data Structures</span>
+              <span>Backend</span>
+              <span>AI</span>
+              <span>Git</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="skills" class="skills-section">
-      <div class="container">
-        <h2>Technical Skills & Tools</h2>
-        <div class="skills=grid">
-          <div class="skill-category">
-            <h3>Programming & Backend</h3>
-            <ul>
-              <li>Java</li>
-              <li>Python</li>
-              <li>Data Structures</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Systems & Hardware Logic</h3>
-            <ul>
-              <li>CircuitVerse</li>
-              <li>Logic Gates & Decoders</li>
-              <li>Digital Logic Design</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Tools & Workflow</h3>
-            <ul>
-              <li>Git & GitHub</li>
-              <li>VS Code</li>
-              <li>Windows Environment</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <h2>Get In Touch</h2>
-        <p>
-          I'm always open to discussing software engineering, collaborative
+      <section id="contact">
+        <h2>Contact</h2>
+        <p class="contact-text">
+          I am open to talking about software engineering, collaborating on
           projects, or my learning journey.
         </p>
         <div class="contact-links">
-          <a href="mailto:johnjanec11@gmail.com" class="btn primary-btn"
-            >Email Me</a
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=johnjanec11@gmail.com"
+            class="btn"
+            target="_blank"
+            >Email me</a
           >
           <a
             href="https://github.com/janeC117"
+            class="btn outline"
             target="_blank"
-            class="btn secondary-btn"
-            >GitHub Profile</a
+            >GitHub</a
           >
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <p>&copy; 2026 Jane John. All rights reserved.</p>
-    </footer>
+      <footer>
+        <p>&copy; 2026 Jane John. All rights reserved.</p>
+      </footer>
+    </main>
   </body>
 </html>
